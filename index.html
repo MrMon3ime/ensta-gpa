@@ -9,41 +9,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
     <style>
         .choice-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background: rgba(25, 25, 112, 0.85);
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(70, 130, 180, 0.8);
-            border: 2px solid #4682b4;
-            backdrop-filter: blur(10px);
-        }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(25, 25, 112, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(70, 130, 180, 0.8);
+    border: 2px solid #4682b4;
+    backdrop-filter: blur(10px);
+}
 
-        .choice-btn {
-            width: 45%;
-            padding: 20px;
-            font-size: 20px;
-            font-weight: bold;
-            text-transform: uppercase;
-            background-color: #6a5acd;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            box-shadow: 0 0 10px rgba(70, 130, 180, 0.8);
-            transition: all 0.3s ease;
-            font-family: 'Cinzel', serif;
-        }
+.choice-btn {
+    font-family: "Goudy Old Style", Garamond, serif;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding: 20px;
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(70, 130, 180, 0.8);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    white-space: nowrap;
+     text-transform: capitalize;
 
-        .choice-btn:hover {
-            background-color: #00bfff;
-            box-shadow: 0 0 15px rgba(0, 191, 255, 1);
-        }
+}
+.choice-btn sup {
+    font-size: 0.6em;
+}
+
+.small-text {
+    font-weight: normal;
+    font-size: 0.95em;
+    text-transform: none;
+}
+
+@media (min-width: 600px) {
+    .choice-btn {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+}
     </style>
 </head>
 <body>
@@ -57,8 +78,8 @@
         <h1>Choose Your Year !</h1>
         
         <div class="choice-container">
-            <button class="choice-btn" onclick="location.href='first-year-1st-sem.html'">1st Year (1st Semester)</button>
-            <button class="choice-btn" onclick="location.href='second-year-3rd-sem.html'">2nd Year (3rd Semester)</button>
+            <button class="choice-btn" onclick="location.href='first-year-1st-sem.html'">1ˢᵗ Year / Semester 1</button>
+            <button class="choice-btn" onclick="location.href='second-year-3rd-sem.html'">2ⁿᵈ Year / Semester 3</button>
         </div>
     </div>
 

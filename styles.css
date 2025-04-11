@@ -10,7 +10,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-
 html {
     scrollbar-color: rgba(106, 90, 205, 0.5) transparent;
     scrollbar-width: thin;
