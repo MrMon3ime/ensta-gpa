@@ -1,43 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ensta CS GPA Calculator</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="titleee.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <div class="container">
-        <h1>Second Year Computer Science - 3rd Semester GPA Calculator</h1>
-        <div id="inputs"></div>
-        <div id="result"></div>
-        <button id="showRemarkBtn">Show Average Mark & Remark</button>
-    </div>
-    
-    <div class="popup-overlay" id="remarkPopup">
-        <div class="popup-content">
-            <button class="close-popup" id="closePopupBtn">&times;</button>
-            <h2>Your Average Remark</h2>
-            <div class="popup-message" id="popupMessage">
-            </div>
-            <div class="module-averages" id="moduleAverages">
-            </div>
-        </div>
-    </div>
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ENSTA CS GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="titleee.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+    <style>
+        .choice-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(25, 25, 112, 0.85);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(70, 130, 180, 0.8);
+            border: 2px solid #4682b4;
+            backdrop-filter: blur(10px);
+        }
+
+        .choice-btn {
+            width: 45%;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: #6a5acd;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(70, 130, 180, 0.8);
+            transition: all 0.3s ease;
+            font-family: 'Cinzel', serif;
+        }
+
+        .choice-btn:hover {
+            background-color: #00bfff;
+            box-shadow: 0 0 15px rgba(0, 191, 255, 1);
+        }
+    </style>
+</head>
+<body>
     <div class="logo-container">
-        <img src="Ensta Circle.png" alt="ENSTA Logo">
+        <a href="index.html">
+            <img src="Ensta Circle.png" alt="ENSTA Logo" />
+        </a>
     </div>
-    <div class="dedications-section">
-        <h2>Dedications</h2>
-        <div id="dedication-container">
-            <div class="dedication-item active" id="dedication-1"></div>
-            <div class="dedication-item active" id="dedication-2"></div>
+
+    <div class="container">
+        <h1>Choose Your Year !</h1>
+        
+        <div class="choice-container">
+            <button class="choice-btn" onclick="location.href='first-year-1st-sem.html'">1st Year (1st Semester)</button>
+            <button class="choice-btn" onclick="location.href='second-year-3rd-sem.html'">2nd Year (3rd Semester)</button>
         </div>
     </div>
+
+
+
     <footer>Made By Mx1 | Keep calm and blame the professor.</footer>
     <script src="script.js"></script>
 </body>

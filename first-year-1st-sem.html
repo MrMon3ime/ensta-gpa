@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>1st Year CS GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="titleee.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h1>First Year Computer Science - 1st Semester GPA Calculator</h1>
+        <div id="inputs"></div>
+        <div id="result"></div>
+        <button id="showRemarkBtn">Show Average Mark & Remark</button>
+    </div>
+
+    <div class="popup-overlay" id="remarkPopup">
+        <div class="popup-content">
+            <button class="close-popup" id="closePopupBtn">&times;</button>
+            <h2>Your Average Remark</h2>
+            <div class="popup-message" id="popupMessage"></div>
+            <div class="module-averages" id="moduleAverages"></div>
+        </div>
+    </div>
+
+    <div class="logo-container">
+        <a href="index.html">
+            <img src="Ensta Circle.png" alt="ENSTA Logo" />
+        </a>
+    </div>
+
+    <div class="dedications-section">
+        <div class="dedication" id="dedication-1"></div>
+        <div class="dedication" id="dedication-2"></div>
+    </div>
+
+    <footer>Made By Mx1 | Keep calm and blame the professor.</footer>
+
+    <script src="1st-year-script.js"></script>
+    <audio id="clickSound" src="click.mp3"></audio>
+<audio id="popupSound" src="popup.mp3"></audio>
+<audio id="typeSound" src="type.mp3"></audio>
+</body>
+</html>
