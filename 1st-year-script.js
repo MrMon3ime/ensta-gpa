@@ -3,10 +3,9 @@ const modules = [
     { name: "Mathematical Analysis 1", coef: 5 },
     { name: "Algorithmics and Static Data Structures", coef: 5 },
     { name: "Computer Architecture 1", coef: 4 },
-    { name: "English 1", coef: 2 },
     { name: "Introduction to OS 1", coef: 3 },
     { name: "Written Expression Techniques", coef: 2 },
-    { name: "Office and Web", coef: 2 },
+    { name: "Office and Web", coef: 1 },
     { name: "Electricity", coef: 3 }
 ];
 
